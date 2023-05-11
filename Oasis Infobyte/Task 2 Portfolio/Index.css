@@ -1,0 +1,551 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+body{
+    overflow: auto;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    /* background-image: url(Bg.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+/* Navbar styling */
+
+.navbar{
+    top: 0;
+    position: sticky;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: rgb(35, 42, 42);
+    z-index: 2;
+    
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 40px;
+    margin: auto;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: antiquewhite;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: blueviolet;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: bisque;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: aquamarine;
+}
+/* Home section styling / font changer*/
+.home{
+    display: flex;
+    background: url('Self.png')no-repeat right;
+    height: 85vh;
+    color: white;
+    min-height: 500px;
+    
+}
+.home .home-width{
+    max-width: 1300px;
+    padding: 0 100px;
+    margin: auto 0 150px 40px;
+}
+.home .home-content .text-1{
+    font-size: 30px;
+}
+.home .home-content .text-2{
+    font-size: 45px;
+    font-weight: 550;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 30px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    font-size: 40px;
+    color: brown;
+    font-weight: 500;
+}
+
+p{
+    color: aquamarine;
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+/* About section styling */
+section{
+    padding: 20px 0;
+}
+.about h2{
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500px;
+    margin-bottom: 30px;
+    padding-bottom: 20x;
+}
+.about h2::before{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 3px;
+    left: 50%;
+    bottom: -5px;
+    background-color: rgb(186, 29, 29);
+    transform: translateX(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about .about-content .left{
+    width: 32%;
+}
+.about .about-content .left img{
+    width: 260px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.about .about-content .right{
+    width: 34%;
+}
+.about .about-content .right .text{
+    color: palegreen;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 20x;
+}
+.about .about-content .right .text::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    left: 50%;
+    bottom: -5px;
+    background-color: peru;
+    transform: translateX(-50%);
+}
+.about .about-content .right .txt-1::before{
+    width: 60px;
+}
+.about .about-content .right .txt-2::before{
+    width: 110px;
+}
+.about .about-content .right .info{
+    display: flex;
+    margin-top: 2px;
+    font-size: large;
+    font-weight: 600;
+    justify-content: space-between;
+    color: azure;
+}
+.about .about-content .right .line{
+    position: relative;
+    top: 2px;
+    height: 5px;
+    width: 100%;
+    background-color: lightgray;
+}
+.about .about-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: red;
+
+}
+.about .about-content .right .html::before{
+    width: 90%;
+}
+.about .about-content .right .css::before{
+    width: 90%;
+}
+.about .about-content .right .js::before{
+    width: 80%;
+}
+.about .about-content .right .java::before{
+    width: 75%;
+}
+.about .about-content .right .python::before{
+    width: 92%;
+}
+.about .about-content .right .django::before{
+    width: 80%;
+}
+.about .about-content .right .mysql::before{
+    width: 85%;
+}
+.about .about-content .right .mysql-lite::before{
+    width: 75%;
+}
+.about .about-content .right .doc{
+    display: flex;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.about .about-content .right .doc-1{
+    color: greenyellow;
+    margin-top: 2px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.cv{
+    display: inline-block;
+    background-color: crimson;
+    color: azure;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.cv:hover{
+    color: crimson;
+    background: none;
+}
+.about .down .text-3{
+    color: palegreen;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 20x;
+}
+.about .down .text-3::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 230px;
+    left: 50%;
+    bottom: -5px;
+    background-color: peru;
+    transform: translateX(-50%);
+}
+.about .down .doc-2{
+    color: white;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.about .crtfct{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about .down img{
+    height: 300px;
+    width: 400px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-left h1{
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500px;
+    margin-bottom: 20px;
+    padding-bottom: 20x;
+
+}
+.contact-left h1::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    left: 50%;
+    bottom: -5px;
+    background-color: rgb(186, 29, 29);
+    transform: translateX(-50%);
+}
+.contact-left .social-icon{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.contact-left .social-icon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: orangered;
+    display: inline;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-right{
+    width: 100%;
+    margin-left: 10px;
+}
+
+.form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: rgb(83, 81, 81);
+    padding: 10px;
+    margin: 5px 0;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.form button{
+    display: inline-block;
+    cursor: pointer;
+    background-color: crimson;
+    color: azure;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 15px;
+    margin-top: 15px;
+    margin-left: 100px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.form button:hover{
+    color: crimson;
+    background: none;
+}
+
+
+
+
+
+#icon{
+    display: "none";
+    /* background-color: blue; */
+}
+
+/* Navbar styling */
+
+@media(max-width:900px){
+#icon{
+    /* display: flex; */
+    position: fixed;
+    right: 0;
+    margin-right: 50px;
+    top: 0;
+    width: 30px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+#icon::before{
+    content: "";
+    position: absolute;
+    margin-top: 30px;
+    width: 25px;
+    height: 4px;
+    background-color: green;
+    transform: translateY(-10px);
+    transition: 0.4s;
+}
+#icon::after{
+    content: "";
+    position: absolute;
+    margin-top: 30px;
+    width: 25px;
+    height: 4px;
+    background-color: green;
+    box-shadow: 0 10px 0 0 black;
+    transition: 0.4s;
+}
+.active#icon::before{
+    transform: rotate(45deg);
+    background-color: red;
+}
+.active#icon::after{
+    transform: rotate(-45deg);
+    box-shadow: none;
+    background-color: red;
+}
+.navbar .menu{
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 35vh;
+    /* background-color: rgb(38, 204, 149); */
+    text-align: center;
+    padding: 0;
+    /* top: 80px; */
+    margin-top: 60px;
+    right: 0;
+    top: -100%;
+    transition: 0.5s;
+}
+
+.navbar .menu li{
+    display: block;
+    list-style: none;
+    padding: 15px 40px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbar .menu li a:hover{
+    color: rgb(129, 246, 87);
+}
+.active.menu{
+    /* right: 0; */
+    top: 0;
+}
+
+/* Home section styling / font changer */
+
+.home .home-width{
+    padding: 0 20px;
+    margin: auto 0 100px auto;
+}
+.home .home-content .text-1{
+    font-size: 20px;
+}
+.home .home-content .text-2{
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 25px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    font-size: 30px;
+    color: brown;
+    font-weight: 500;
+}
+
+/* About styling */
+.about .about-content .left img{
+    height: 300px;
+    width: 300px;
+}
+.max-width{
+    max-width: 800px;
+}
+.about .about-content .column{
+    width: 50%;
+}
+.about .about-content .left{
+    display: flex;
+    padding-right: 10px;
+}
+.about .about-content .right{
+    flex: 50%;
+}
+
+}
+
+
+
+
+
+
+/* theme-toggler */
+
+.theme-toggler{
+    position: fixed;
+    top: -10rem;
+    margin-top: 3rem;
+    right: 0;
+    margin-right: 5rem;
+    /* background-color: blue; */
+    text-align: center;
+    width: 20rem;
+    z-index: 1000;
+    transition: 0.4s;
+}
+.theme-toggler.active{
+    top: 0;
+}
+.theme-toggler .buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+.theme-toggler .buttons .theme-btn{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.toggle-btn{
+    position: absolute;
+    top: 45px;
+    /* left: -4.9rem; */
+    padding: 1.3rem 1.5rem;
+    /* background: blue; */
+    cursor: pointer;
+}
+.toggle-btn i{
+    color: pink;
+    font-size: 2rem;
+    animation: spin 4s linear infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(360deg);
+    }
+}
